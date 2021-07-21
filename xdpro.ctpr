@@ -55,6 +55,9 @@
         </CompilerOptions>
       </Item>
       <Item Name="Release">
+        <MacroValues Count="1">
+          <Macro3 Name="LCLWidgetType" Value="gtk2"/>
+        </MacroValues>
         <CompilerOptions>
           <Version Value="11"/>
           <Target>
@@ -66,6 +69,7 @@
           </SearchPaths>
           <CodeGeneration>
             <SmartLinkUnit Value="True"/>
+            <TargetOS Value="linux"/>
             <Optimizations>
               <OptimizationLevel Value="3"/>
             </Optimizations>
@@ -83,6 +87,11 @@
           </Linking>
         </CompilerOptions>
       </Item>
+      <SharedMatrixOptions Count="3">
+        <Item1 ID="889337404223" Type="IDEMacro" MacroName="LCLWidgetType" Value="win32"/>
+        <Item2 ID="321517765902" Type="IDEMacro" MacroName="LCLWidgetType" Value="gtk2"/>
+        <Item3 ID="028716261623" Modes="Release" Type="IDEMacro" MacroName="LCLWidgetType" Value="gtk2"/>
+      </SharedMatrixOptions>
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
@@ -109,7 +118,7 @@
         <Filename Value="main.pas"/>
         <FRMtype Value="0"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="frmMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
